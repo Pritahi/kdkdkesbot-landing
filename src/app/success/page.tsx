@@ -22,32 +22,32 @@ export default function SuccessPage() {
   }, []);
 
   return (
-    <main className="min-h-screen bg-white flex items-center justify-center px-4">
+    <main className="min-h-screen bg-white flex items-center justify-center px-6">
       <div className="max-w-md w-full text-center">
         {/* Icon */}
-        <div className="w-20 h-20 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-8">
-          <svg className="w-10 h-10 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center mx-auto mb-8">
+          <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
           </svg>
         </div>
 
         {/* Text */}
-        <h1 className="text-3xl font-bold text-gray-900 mb-4">Payment Successful!</h1>
-        <p className="text-gray-600 mb-8">
-          Thank you for your purchase. Your credits have been added.
+        <h1 className="text-3xl font-bold text-gray-900 mb-4">Payment Successful</h1>
+        <p className="text-gray-600 mb-8 leading-relaxed">
+          Thank you for your purchase. Your credits have been added to your account.
         </p>
 
         {/* Countdown */}
-        <p className="text-gray-500 text-sm mb-6">
+        <p className="text-gray-500 text-sm mb-8">
           Redirecting to Telegram in {countdown} seconds...
         </p>
 
         {/* Button */}
         <Link 
           href="https://t.me/Kdkdkesbot"
-          className="inline-block bg-black text-white px-8 py-4 rounded-lg font-semibold hover:bg-gray-800"
+          className="inline-block bg-black text-white px-8 py-4 rounded font-semibold hover:bg-gray-800 transition-colors"
         >
-          Open Telegram Bot →
+          Open Telegram Bot
         </Link>
       </div>
     </main>
